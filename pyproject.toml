@@ -1,0 +1,18 @@
+[project]
+name = "cards"
+dynamic = ["version"]
+description = "Cards is a small command line task tracking application."
+readme = "README.md"
+authors = [{ name = "Christian Roese", email = "croese@gmail.com" }]
+requires-python = ">=3.13"
+dependencies = ["tinydb>=4.8.2", "typer>=0.16.0"]
+
+[project.scripts]
+cards = "cards:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "src/cards/__init__.py"
