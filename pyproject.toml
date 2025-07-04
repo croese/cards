@@ -16,3 +16,8 @@ build-backend = "hatchling.build"
 
 [tool.hatch.version]
 path = "src/cards/__init__.py"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.1",
+]
